@@ -1,4 +1,4 @@
 class ApplicationMailer < ActionMailer::Base
-  default from: 'from@kadai-booklist.herokuapp.com'
+  default from: 'from@dic-monolist.herokuapp.com'
   layout 'mailer'
 end
