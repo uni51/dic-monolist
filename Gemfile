@@ -62,3 +62,5 @@ gem 'tzinfo-data', platforms: [:mingw, :mswin, :x64_mingw, :jruby]
 gem 'rakuten_web_service', '1.5.0'
 # 環境変数を簡単に扱えるGem
 gem 'dotenv-rails'
+# 日本語対応用Gem
+gem 'rails-i18n'
