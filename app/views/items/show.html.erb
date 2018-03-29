@@ -26,7 +26,10 @@
         </div>
         <div class="panel-body">
           <% @want_users.each do |user| %>
-            <%= link_to user.name, user_path(user) %>
+            <p>
+              <%= image_tag user.icon, size: 20, class: 'img-circle' %>
+              <%= link_to user.name, user_path(user) %>
+            </p>
           <% end %>
         </div>
       </div>
@@ -38,7 +41,10 @@
         </div>
         <div class="panel-body">
           <% @have_users.each do |user| %>
-            <%= link_to user.name, user_path(user) %>
+            <p>
+              <%= image_tag user.icon, size: 20, class: 'img-circle' %>
+              <%= link_to user.name, user_path(user) %>
+            </p>
           <% end %>
         </div>
       </div>

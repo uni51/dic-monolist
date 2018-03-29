@@ -64,3 +64,7 @@ gem 'rakuten_web_service', '1.5.0'
 gem 'dotenv-rails'
 # 日本語対応用Gem
 gem 'rails-i18n'
+
+# 追記 画像アップロード用ファイル
+gem 'carrierwave'
+gem 'mini_magick'

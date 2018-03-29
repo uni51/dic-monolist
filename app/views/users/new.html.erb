@@ -37,6 +37,13 @@
             <%= f.password_field :password_confirmation, class: 'form-control' %>
           </div>
 
+          <div class="form-group">
+            <%= f.label :icon, 'アイコン画像' %>
+            <%= f.file_field :icon, id: :user_icon, class: 'form-control' %>
+            <!-- バリデーションで引っかかった時用の処理 -->
+            <%= f.hidden_field :icon_cache %>
+          </div>
+
           <div class="text-right">
             <%= f.submit '登録する', class: 'btn btn-success' %>
           </div>
