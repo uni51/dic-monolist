@@ -22,7 +22,6 @@ ActiveRecord::Schema.define(version: 20180329025645) do
     t.string "image_url"
     t.datetime "created_at", null: false
     t.datetime "updated_at", null: false
-    t.bigint "created_user_id"
   end
 
   create_table "ownerships", force: :cascade do |t|
