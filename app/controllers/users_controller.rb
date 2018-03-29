@@ -16,6 +16,7 @@ class UsersController < ApplicationController
     @user = User.new(user_params)
 
     if @user.save
+      ContactMailer.contact_mail(@user).deliver # 追記 メール送信処理
       flash[:success] = 'ユーザを登録しました。'
       redirect_to @user
     else

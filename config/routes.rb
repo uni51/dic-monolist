@@ -13,4 +13,8 @@ Rails.application.routes.draw do
 
   get 'rankings/want', to: 'rankings#want'
   get 'rankings/have', to: 'rankings#have'
+
+  if Rails.env.development?
+    mount LetterOpenerWeb::Engine, at: "/letter_opener"
+  end
 end
